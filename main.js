@@ -1,7 +1,11 @@
 var response = getTransaction();
-console.log(response);
 
+while(!isQuit(response)) {
+  console.log(response);
+  response = getTransaction();
+}
 
+console.log("Goodbye");
 
 
 function isQuit(response) {
